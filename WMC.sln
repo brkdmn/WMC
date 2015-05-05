@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMC.Services.Contacts", "WMC.Services.Contacts\WMC.Services.Contacts.csproj", "{791F2086-E400-45AD-A618-9809E1CDF7BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMC.Services.DAL", "WMC.Services.DAL\WMC.Services.DAL.csproj", "{1A059F7F-863F-485E-92F9-896774A5CEBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CCC7180F-D3E8-42BC-91E1-2F5E44D1D956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerCache", "ServerCache\ServerCache.csproj", "{693D6740-875C-428E-8D9D-9948A0E3C63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMC.Services.Web.API", "WMC.Services.Web.API\WMC.Services.Web.API.csproj", "{B019E818-613C-466E-B82C-A501DFE26F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{88C39814-C08A-4313-AB9B-FCEDE3EE2694}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://thraceproject.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WMC.Services.Contacts\\WMC.Services.Contacts.csproj
+		SccProjectName1 = WMC.Services.Contacts
+		SccLocalPath1 = WMC.Services.Contacts
+		SccProjectUniqueName2 = WMC.Services.DAL\\WMC.Services.DAL.csproj
+		SccProjectName2 = WMC.Services.DAL
+		SccLocalPath2 = WMC.Services.DAL
+		SccProjectUniqueName3 = ServerCache\\ServerCache.csproj
+		SccProjectTopLevelParentUniqueName3 = WMC.sln
+		SccProjectName3 = ServerCache
+		SccLocalPath3 = ServerCache
+		SccProjectUniqueName4 = WMC.Services.Web.API\\WMC.Services.Web.API.csproj
+		SccProjectName4 = WMC.Services.Web.API
+		SccLocalPath4 = WMC.Services.Web.API
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{791F2086-E400-45AD-A618-9809E1CDF7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791F2086-E400-45AD-A618-9809E1CDF7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791F2086-E400-45AD-A618-9809E1CDF7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791F2086-E400-45AD-A618-9809E1CDF7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A059F7F-863F-485E-92F9-896774A5CEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A059F7F-863F-485E-92F9-896774A5CEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A059F7F-863F-485E-92F9-896774A5CEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A059F7F-863F-485E-92F9-896774A5CEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693D6740-875C-428E-8D9D-9948A0E3C63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693D6740-875C-428E-8D9D-9948A0E3C63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693D6740-875C-428E-8D9D-9948A0E3C63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693D6740-875C-428E-8D9D-9948A0E3C63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B019E818-613C-466E-B82C-A501DFE26F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B019E818-613C-466E-B82C-A501DFE26F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B019E818-613C-466E-B82C-A501DFE26F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B019E818-613C-466E-B82C-A501DFE26F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{693D6740-875C-428E-8D9D-9948A0E3C63F} = {CCC7180F-D3E8-42BC-91E1-2F5E44D1D956}
+	EndGlobalSection
+EndGlobal

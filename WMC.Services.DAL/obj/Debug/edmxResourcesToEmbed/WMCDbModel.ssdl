@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WMCDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentMenuId" Type="int" />
+    <Property Name="ActionId" Type="int" />
+    <Property Name="MenuName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="PageRank" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="ImageUrl" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="ParamActions">
+    <Key>
+      <PropertyRef Name="ActionId" />
+    </Key>
+    <Property Name="ActionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ControllerId" Type="int" Nullable="false" />
+    <Property Name="ControllerName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ActionName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="nchar" MaxLength="10" />
+    <Property Name="ts" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParamAuthorizationPermission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthorizationId" Type="int" />
+    <Property Name="ActionId" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="ts" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParamAuthorizations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="ts" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParamControllers">
+    <Key>
+      <PropertyRef Name="ControllerId" />
+    </Key>
+    <Property Name="ControllerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ControllerName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+  </EntityType>
+  <EntityType Name="ParamRoleAuthorizations">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Name="RolePermissionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="AuthorizationId" Type="int" />
+    <Property Name="ts" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParamRoles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="ts" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParamUserTypes">
+    <Key>
+      <PropertyRef Name="UserTypeId" />
+    </Key>
+    <Property Name="UserTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="Priority" Type="smallint" Nullable="false" />
+    <Property Name="ts" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="OldPassword" Type="varchar" MaxLength="200" />
+    <Property Name="Mail" Type="varchar" MaxLength="200" />
+    <Property Name="LastLoginTime" Type="datetime" />
+    <Property Name="TheNumberOfIncorrectPassword" Type="smallint" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="CreateUserId" Type="int" Nullable="false" />
+    <Property Name="UpdateUserId" Type="int" />
+    <Property Name="CheckTypeId" Type="int" />
+    <Property Name="ImageUrl" Type="varchar" MaxLength="200" />
+    <Property Name="EmployeeId" Type="int" />
+    <Property Name="ChildGuardianId" Type="int" />
+    <Property Name="UserTypeId" Type="int" />
+  </EntityType>
+  <EntityContainer Name="WMCDbModelStoreContainer">
+    <EntitySet Name="Menus" EntityType="Self.Menus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamActions" EntityType="Self.ParamActions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamAuthorizationPermission" EntityType="Self.ParamAuthorizationPermission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamAuthorizations" EntityType="Self.ParamAuthorizations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamControllers" EntityType="Self.ParamControllers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamRoleAuthorizations" EntityType="Self.ParamRoleAuthorizations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamRoles" EntityType="Self.ParamRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParamUserTypes" EntityType="Self.ParamUserTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

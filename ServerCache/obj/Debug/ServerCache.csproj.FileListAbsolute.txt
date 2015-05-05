@@ -1,0 +1,9 @@
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\ServerCache.dll.config
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\ServerCache.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\ServerCache.pdb
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\EntityFramework.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\EntityFramework.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\obj\Debug\ServerCache.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\ServerCache\obj\Debug\ServerCache.pdb

@@ -1,0 +1,16 @@
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\WMC.Services.Contacts.dll.config
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\WMC.Services.Contacts.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\WMC.Services.Contacts.pdb
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\EntityFramework.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\System.Web.Http.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\EntityFramework.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\System.Web.Http.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\obj\Debug\WMC.Services.Contacts.dll
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\obj\Debug\WMC.Services.Contacts.pdb
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Burak\Desktop\wmcProject\TU.Project\WMC\WMC.Services.Contacts\obj\Debug\WMC.Services.Contacts.csprojResolveAssemblyReference.cache
